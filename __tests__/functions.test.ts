@@ -1,7 +1,7 @@
-import { functionOne, functionTwo } from '../src/module';
+import { functionOne, functionTwo } from '../src/functions';
 
-jest.mock('../src/module', () => {
-  const originalModule = jest.requireActual('../src/module');
+jest.mock('../src/functions', () => {
+  const originalModule = jest.requireActual('../src/functions');
 
   return {
     __esModule: true,
