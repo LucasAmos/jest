@@ -10,10 +10,10 @@ jest.mock('../src/module', () => {
   };
 });
 
-test('test class function one', () => {
+test('function one', () => {
   expect(functionOne()).toEqual('functionOne original implementation');
 });
 
-test('test class function two', () => {
+test('function two', () => {
   expect(functionTwo()).toEqual('functionTwo mocked implementation');
 });

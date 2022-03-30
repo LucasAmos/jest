@@ -3,10 +3,10 @@ const functionTwoSpy = jest
   .spyOn(ClassMock, 'queryTwo')
   .mockImplementation(() => 'queryTwo mocked data');
 
-test('classMock one ', () => {
+test('classMock one', () => {
   expect(ClassMock.queryOne()).toEqual('queryOne original data');
 });
-test('classMock two ', () => {
+test('classMock two', () => {
   expect(ClassMock.queryTwo()).toEqual('queryTwo mocked data');
   expect(functionTwoSpy).toHaveBeenCalled();
 });
