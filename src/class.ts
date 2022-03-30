@@ -1,11 +1,11 @@
 export default class ClassMock {
   constructor() {}
 
-  static functionOne() {
-    return 'functionOne original implementation';
+  static queryOne() {
+    return 'queryOne original data';
   }
 
-  static functionTwo() {
-    return 'functionTwo original implementation';
+  static queryTwo() {
+    return 'queryTwo original data';
   }
 }
