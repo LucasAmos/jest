@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
-  "dependencies": {},
+  "dependencies": {
+    "node-fetch": "2"
+  },
   "devDependencies": {
     "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.40",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
     "eslint": "^8.12.0",
@@ -21,7 +24,7 @@
   "scripts": {
     "build": "tsc",
     "clean": "rm -rf dist",
-    "test": "jest"
+    "test": "jest --watchAll"
   },
   "author": "",
   "license": "ISC"
